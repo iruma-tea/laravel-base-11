@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../laravel-base-11.wiki"
+		},
+		{
+			"path": "../laravel-base-wiki"
 		}
 	],
 	"settings": {
