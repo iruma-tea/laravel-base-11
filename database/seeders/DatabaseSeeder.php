@@ -21,9 +21,15 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // CategoryTableSeederファイルをシーディングの対象にする
-        $this->call(CategoryTableSeeder::class);
+        // $this->call(CategoryTableSeeder::class);
 
         // AuthorsTableSeederファイルをシーディングの対象にする
-        $this->call(AuthorsTableSeeder::class);
+        // $this->call(AuthorsTableSeeder::class);
+
+        $this->call([
+            AuthorsTableSeeder::class,
+            BooksTableSeeder::class,
+            AuthorBookTableSeeder::class,
+        ]);
     }
 }
