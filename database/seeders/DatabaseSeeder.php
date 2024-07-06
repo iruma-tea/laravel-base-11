@@ -19,5 +19,11 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        // CategoryTableSeederファイルをシーディングの対象にする
+        $this->call(CategoryTableSeeder::class);
+
+        // AuthorsTableSeederファイルをシーディングの対象にする
+        $this->call(AuthorsTableSeeder::class);
     }
 }
