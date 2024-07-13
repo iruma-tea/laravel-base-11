@@ -16,8 +16,8 @@ class BookForm extends Component
     public function __construct(
         public Collection $categories,
         public Collection $authors,
-        public Book $book,
-        public array $authorIds
+        public Book $book = new Book(),
+        public array $authorIds = []
     ) {
     }
 
