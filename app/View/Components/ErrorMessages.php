@@ -4,16 +4,24 @@ namespace App\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\ViewErrorBag;
 use Illuminate\View\Component;
 
 class ErrorMessages extends Component
 {
+    public ViewErrorBag $errors;
+
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(ViewErrorBag $errors)
     {
-        //
+        $this->errors = $errors;
+    }
+
+    public function has2MoreErrors(): bool
+    {
+        return count($this->errors) > 2;
     }
 
     /**
