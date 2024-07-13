@@ -8,7 +8,10 @@
 		},
 		{
 			"path": "../laravel-base-wiki"
-		}
+		},
+        {
+            "path": "../laravel-base"
+        }
 	],
 	"settings": {
 		"files.encoding": "utf8",
